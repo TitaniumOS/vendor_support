@@ -324,12 +324,12 @@ public class ColorBlendPreference extends Preference
         public void onClick(View v) {
             if (v == mDialogPreviewColorStart) {
                 ColorPickerDialog pickerDialog =
-                        new ColorPickerDialog(getContext(), mPreviewColorStart);
+                        new ColorPickerDialog(getContext(), mPreviewColorStart, false);
                 pickerDialog.setOnColorChangedListener(mStartColorChangedListener);
                 pickerDialog.show();
             } else if (v == mDialogPreviewColorEnd) {
                 ColorPickerDialog pickerDialog =
-                        new ColorPickerDialog(getContext(), mPreviewColorEnd);
+                        new ColorPickerDialog(getContext(), mPreviewColorEnd, false);
                 pickerDialog.setOnColorChangedListener(mEndColorChangedListener);
                 pickerDialog.show();
             } else if (v == mDialogPreviewColorBetween) {
